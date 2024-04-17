@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Finka Kivinaki - Checkout</title>
+
+    <!--  -->
+    <!-- Agregando Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!--  -->
+
+    <!-- Agregando Link de CSS -->
+    <link rel="stylesheet" href="css/checkout.style.css" />
+    <!--  -->
+
+    <!-- Agregando Fuente Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
+
+    <!-- Agregando íconos web-->
+    <!-- de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!--  -->
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!--  -->
+
+    <!--  -->
+  </head>
+  <body>
+    <!--  -->
+    <!-- Barra de navegacion -->
+    <header>
+      <nav>
+        <div class="container-xxl d-flex justify-content-end p-3">
+          <a href="#" class="d-flex align-items-center">
+            <img
+              src="images/logo-kivinaki-oscuro.svg"
+              class="logo-dark"
+              alt="Logo"
+            />
+            <img src="images/logo-kivinaki.svg" class="logo-light" alt="Logo" />
+          </a>
+          <div class="d-flex align-items-center ms-auto">
+            <span>Su compra en kivinaki es 100% segura.</span>
+            <img src="images/protect.svg" alt="Protegido" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--  -->
+
+    <!-- Contenido principal -->
+    <main class="py-3">
+      <div class="container-md">
+        <h5>
+          <a href="#" class="txt-orange d-flex align-items-center gap-3 fw-medium">
+            <ion-icon name="caret-back-outline"></ion-icon>
+            <span>Volver al carrito</span>
+          </a>
+        </h5>
+        <h4 class="txt-secondary mt-2 mb-4">¡Ya falta poco para finalizar con tu compra!</h4>
+        <section class="row">
+          <!--  -->
+          <!--  -->
+            <form class="col-12 col-xxl-8">
+                <div class="information d-flex flex-column justify-content-between bg-white rounded-4 p-4 mb-4">
+                    <div class="form-header form-title d-flex align-items-center gap-2">
+                        <p class="m-0">Necesitamos algunos datos para continuar</p>
+                    </div>
+                    <div class="form-body d-flex flex-column gap-3">
+                        <p>Estos datos no se guardarán para una próxima compra. Puedes continuar o <a href="#" class="txt-orange"><strong>Iniciar Sesión</strong></a>.</p>
+                        <div class="row">
+                            <div class="mb-2 col-12 col-lg-4">
+                                <label for="first_name" class="form-label">Nombres</label>
+                                <input type="text" class="form-control" id="first_name" required>
+                            </div>
+                            <div class="mb-2 col-12 col-lg-4">
+                                <label for="last-name-father" class="form-label">Apellido paterno</label>
+                                <input type="text" class="form-control" id="last-name-father" required>
+                            </div>
+                            <div class="mb-2 col-12 col-lg-4">
+                                <label for="last-name-mother" class="form-label">Apellido materno</label>
+                                <input type="text" class="form-control" id="last-name-mother" required>
+                            </div>
+                            <div class="mb-2 col-12 col-lg-4">
+                                <label for="type-doc" class="form-label">Tipo de documento</label>
+                                <select class="form-select" id="type-doc" aria-label="Tipo de documentos">
+                                    <option selected>Escoge una opción</option>
+                                    <option value="dni">DNI</option>
+                                    <option value="ce">C.E.</option>
+                                    <option value="pass">Pasaporte</option>
+                                </select>
+                            </div>
+                            <div class="mb-2 col-12 col-lg-3">
+                                <label for="id-document" class="form-label">Nro. de documento</label>
+                                <input type="text" class="form-control" id="id-document" required>
+                            </div>
+                            <div class="mb-2 col-12 col-lg-2">
+                                <label for="phone" class="form-label">Celular</label>
+                                <input type="text" class="form-control" id="phone" required>
+                            </div>
+                            <div class="mb-2 col-12 col-lg-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              He leído y acepto el <a href="#" class="txt-orange">uso de mis datos</a>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="address d-flex flex-column justify-content-between bg-white rounded-4 p-4 mb-4">
+                    <h3 class="form-title">¿En dónde recibirás tu pedido?</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="checkDelivery" id="inHome" checked>
+                        <label class="form-check-label" for="inHome">
+                          <h5>En una de tus direcciones</h5>
+                          <span>Recibirás tu pedido donde estés</span>
+                        </label>
+                    </div>
+                    <button class="w-100 py-3 my-3" data-bs-toggle="modal" data-bs-target="#addAddressModal">+ Agregar dirección</button>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="checkDelivery" id="inStore">
+                        <label class="form-check-label" for="inStore">
+                            <h5>En tienda</h5>
+                            <span>¡Olvídate de los costos de envío!</span>
+                        </label>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="billing d-flex flex-column justify-content-between bg-white rounded-4 p-4 mb-4">
+                    <h3 class="form-title">Solicita un comprobante de pago</h3>
+                    <p>Activa esta opción si deseas que te enviemos factura, de lo contrario te enviaremos boleta.</p>
+                    <div class="form-check form-switch d-flex align-items-center gap-2">
+                        <input class="form-check-input" type="checkbox" role="switch" id="comprobanteRadio">
+                        <label class="form-check-label fw-semibold" for="comprobanteRadio">Solicitar Factura</label>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="checking d-flex flex-column justify-content-between bg-white rounded-4 p-4 mb-4">
+                    <h3 class="form-title">Comprueba tus datos antes de finalizar tu compra</h3>
+                    <ul>
+                        <li>
+                            <span class="icon-check"><i class="bi bi-person-vcard"></i></span>
+                            <span class="tag-check">Datos personales:</span>
+                            <span class="info-check">--</span>
+                        </li>
+                        <li>
+                            <span class="icon-check"><i class="bi bi-box-seam"></i></span>
+                            <span class="tag-check">Despachado por:</span>
+                            <span class="info-check">Finka Kivinaki</span>
+                        </li>
+                        <li>
+                            <span class="icon-check"><i class="bi bi-truck"></i></span>
+                            <span class="tag-check">Tipo de entrega:</span>
+                            <span class="info-check">--</span>
+                        </li>
+                        <li>
+                            <span class="icon-check"><i class="bi bi-clock"></i></span>
+                            <span class="tag-check">Fecha y hora de entrega:</span>
+                            <span class="info-check">--</span>
+                        </li>
+                        <li>
+                            <span class="icon-check"><i class="bi bi-receipt"></i></span>
+                            <span class="tag-check">Comprobante de pago:</span>
+                            <span class="info-check">--</span>
+                        </li>
+                        <li>
+                            <span class="icon-check"><i class="bi bi-credit-card"></i></span>
+                            <span class="tag-check">Medio de pago:</span>
+                            <span class="info-check">--</span>
+                        </li>
+                    </ul>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="conditionsRadio">
+                        <label class="form-check-label" for="conditionsRadio">
+                          He leído y acepto los <a href="#" class="txt-orange"><strong>términos y condiciones</strong></a>
+                          y las <a href="#" class="txt-orange"><strong>Políticas de Privacidad</strong></a>
+                        </label>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="confirm-pay d-flex flex-column justify-content-between bg-white rounded-4 p-4 mb-4">
+                    <div class="hide-summary d-xxl-none mb-3">
+                      <button class="btn abstract d-flex justify-content-between px-0 w-100" data-bs-toggle="modal" data-bs-target="#summaryModal">
+                        <span>Resúmen de pedido</span>
+                        <span><ion-icon name="chevron-down-outline"></ion-icon></span>
+                      </button>
+                      <div class="d-flex justify-content-between w-100 py-2 fs-5 fw-semibold">
+                          <span>Total</span>
+                          <span>S/.59.80</span>
+                      </div>
+                    </div>
+                    <button class="btn finish-purchase" type="submit" disabled>Finalizar compra</button>
+                </div>
+                <!--  -->
+            </form>
+            <!--  -->
+            <!--  -->
+            <div class="list-items col-12 col-xxl-4 d-none d-xxl-block">
+                <div class="row py-4 px-2 bg-white rounded-4 sticky-list">
+                    <div class="col-12 list-head">
+                        <h2 class="d-flex justify-content-between">
+                            <span>Resúmen de pedido</span>
+                            <span>(2)</span>
+                        </h2>
+                    </div>
+                    <div class="col-12 list-body">
+                        <div class="row py-2">
+                            <div class="col-8">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="row h-100">
+                                      <div class="col-3 image-container d-flex justify-content-center p-0">
+                                        <div class="inner-image w-100"><img src="images/cafe-2.png" class="img-fluid" alt="Producto"></div>
+                                      </div>
+                                      <div class="col-9 item-information d-flex flex-column justify-content-between">
+                                        <p class="txt-primary">Café Especial Hacienda el Amparo</p>
+                                        <h4 class="txt-orange">BOLSA 250G</h4>
+                                        <span class="txt-secondary">Cantidad: 1</span>
+                                      </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <div class="d-flex price flex-column justify-content-end">
+                                  <span class="offer-price txt-secondary">S/. 59.80</span>
+                                  <span class="regular-price txt-rose text-decoration-line-through">S/. 89.90</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 list-foot d-flex flex-column justify-content-between gap-2 mt-5">
+                      <h5 class="txt-orange">¿Tienes un cupón de descuento?</h5>
+                      <p class="txt-secondary m-0">Utiiza un cupón o el código de un amigo y paga menos.</p>
+                      <form class="d-flex my-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Ejemplo: T7JX32" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Aplicar</button>
+                      </form>
+                      <h4 class="txt-primary d-flex justify-content-between">
+                        <span>Subtotal</span>
+                        <span>S/.59.80</span>
+                      </h4>
+                      <h5 class="txt-secondary d-flex justify-content-between border-top border-2 py-2">
+                        <span>Total</span>
+                        <span>S/.59.80</span>
+                      </h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </div>
+    </main>
+    <!--  -->
+
+    <!-- Modals -->
+    <!-- Mini Summary -->
+    <div class="modal fade" id="summaryModal" tabindex="-1" aria-labelledby="summaryModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-between">
+            <h1 class="modal-title fs-5" id="summaryModalLabel">Resúmen de pedido <span>(2)</span></h1>
+            <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row py-2">
+              <div class="col-8">
+                  <a href="#" class="text-decoration-none">
+                      <div class="row h-100">
+                        <div class="col-3 image-container d-flex justify-content-center p-0">
+                          <div class="inner-image w-100"><img src="images/cafe-2.png" class="img-fluid" alt="Producto"></div>
+                        </div>
+                        <div class="col-9 item-information d-flex flex-column justify-content-between">
+                          <p class="txt-primary">Café Especial Hacienda el Amparo</p>
+                          <h4 class="txt-orange">BOLSA 250G</h4>
+                          <span class="txt-secondary">Cantidad: 1</span>
+                        </div>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-4">
+                  <div class="d-flex price flex-column justify-content-end">
+                    <span class="offer-price txt-secondary">S/. 59.80</span>
+                    <span class="regular-price txt-rose text-decoration-line-through">S/. 89.90</span>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <!-- Add Address -->
+    <div class="modal fade" id="addAddressModal" tabindex="-1" aria-labelledby="addAddressModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="addAddressModalLabel">Agregar nueva dirección</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!--  -->
+            <!--  -->
+            <div class="input-group mb-3">
+              <span class="input-group-text fs-5"><ion-icon name="location-outline"></ion-icon></span>
+              <input type="text" class="form-control" aria-label="address" placeholder="Ingresa una dirección">
+              <span class="input-group-text fs-5"><ion-icon name="backspace-outline"></ion-icon></span>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="mb-3">
+              <label for="reference" class="form-label">Piso, puerta, oficina o referencia</label>
+              <div class="input-group">
+                <span class="input-group-text" id="reference"><ion-icon name="information-circle-outline"></ion-icon></span>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="reference" placeholder="Ejemplo. Cruce entre la Av. San Luis y Av. Canadá">
+              </div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <label for="Ratios" class="form-label">Marca una opción para esta dirección</label>
+            <div class="row radioAddress">
+              <div class="col-12 col-lg-3 mb-2">
+                <div class="content border border-2 rounded-3 p-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      <ion-icon name="home-outline"></ion-icon> Mi casa
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-3 mb-2">
+                <div class="content border border-2 rounded-3 p-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      <ion-icon name="briefcase-outline"></ion-icon> Oficina
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-3 mb-2">
+                <div class="content border border-2 rounded-3 p-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      <ion-icon name="help-circle-outline"></ion-icon> Otros
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Guardar dirección</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <!--  -->
+
+    <!--  -->
+    <!-- Agregando Scripts -->
+    <!--  -->
+
+    <!-- de Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!--  -->
+
+
+  </body>
+</html>
