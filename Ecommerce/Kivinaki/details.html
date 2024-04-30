@@ -58,6 +58,163 @@
     <!--  -->
   </head>
   <body>
+
+    <!-- Barra de navegacion -->
+    <header>
+      <nav class="navbar navbar-expand-md py-0" aria-label="Barra de navegación">
+        <div class="container-xxl">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images/logo-kivinaki-oscuro.svg"
+              class="logo-dark"
+              width="150px"
+              height="45px"
+              alt="logo"
+            />
+            <img
+              src="images/logo-kivinaki.svg"
+              class="d-none logo-light"
+              width="150px"
+              height="45px"
+              alt="logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control opacity-75"
+                type="search"
+                placeholder="Busca un producto"
+                aria-label="Search"
+              />
+              <button class="btn" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+            <!--  -->
+            <ul class="navbar-nav nav-top ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link d-flex gap-1 align-items-center" href="#">
+                  <i class="bi bi-truck"></i>
+                  <span class="hide-tab">Agrega tu dirección</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex gap-1 align-items-center" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  <i class="bi bi-person"></i>
+                  <span class="hide-tab">Inicia sesión</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex gap-1 align-items-center button" data-bs-toggle="modal" data-bs-target="#cartModal">
+                  <i class="bi bi-cart-fill"></i>
+                  <span class="cart-tab">2</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled d-flex gap-1 align-items-center" aria-disabled="true">
+                  <i class="bi bi-geo-alt"></i>
+                  <span class="hide-tab">Sigue tu pedido</span>
+                </a>
+              </li>
+            </ul>
+            <!-- Hidden category -->
+            <div class="products-category d-md-none">
+              <h2 class="fs-4">Nuestros productos</h2>
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="images/coffee-pack.svg" alt="Pack cafetero" />
+                    <span>Pack cafetero</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="images/coffee.svg" alt="Café" />
+                    <span>Cafés</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="images/coffee-machine.svg" alt="Cafeteras" />
+                    <span>Cafeteras</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="images/chocolate.svg" alt="Chocolate" />
+                    <span>Chocolates</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="images/honey.svg" alt="Miel" />
+                    <span>Miel</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="images/roots.svg" alt="Raíces medicinales" />
+                    <span>Raíces medicinales en polvo</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </nav>
+      <ul class="nav-bottom d-none d-md-flex justify-content-center gap-4">
+        <li>
+          <a class="d-flex items-content-center gap-1" href="#">
+            <img src="images/coffee-pack.svg" alt="Pack cafetero">
+            <span>Pack cafetero</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex items-content-center gap-1" href="#">
+            <img src="images/coffee.svg" alt="Café">
+            <span>Cafés</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex items-content-center gap-1" href="#">
+            <img src="images/coffee-machine.svg" alt="Cafeteras">
+            <span>Cafeteras</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex items-content-center gap-1" href="#">
+            <img src="images/chocolate.svg" alt="Chocolate">
+            <span>Chocolates</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex items-content-center gap-1" href="#">
+            <img src="images/honey.svg" alt="Miel">
+            <span>Miel</span>
+          </a>
+        </li>
+        <li class="">
+          <a class="d-flex items-content-center gap-1" href="#">
+            <img src="images/roots.svg" alt="Raíces medicinales">
+            <span>Raíces medicinales en polvo</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <!--  -->
     <!--  -->
 
     <main class="mt-5">
@@ -148,7 +305,7 @@
                   <h5 class="m-0 fw-bolder text-secondary">Vendido y despachado por:</h5>
                   <strong class="d-flex align-items-center txt-primary">
                     <ion-icon name="checkmark-circle"></ion-icon>
-                    <span>Finka Kivinaki</span>
+                    <span>FINKA KIVINAKI</span>
                   </strong>
                 </div>
                 <div class="body-price mt-2">
@@ -211,52 +368,295 @@
           <!--  -->
         </div>
         <!--  -->
-        <!-- Acordeon tipo tabs groups, arreglar o buscar similares -->
+        <!-- Tabs -->
         <div class="advice bg-white my-3">
-          <div class="accordion row" id="accordionExample">
-            <div class="accordion-item col-4">
-              <button class="btn w-100 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Descripción larga
-              </button>
-            </div>
-            <div class="accordion-item col-4">
-              <button class="btn w-100 border-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Contraindicaciones
-              </button>
-            </div>
-            <div class="accordion-item col-4">
-              <h2 class="accordion-header">
-                <button class="btn w-100 border-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Precaución y advertencia
-                </button>
-              </h2>
-            </div>
-            <!--  -->
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                La Café Especial Hacienda el Amparo ofrecida por Finka Kivinaki es una deliciosa mezcla de granos de café seleccionados para satisfacer a los amantes del café más exigentes. Con un tueste medio, este café presenta un aroma intenso y un sabor equilibrado que deleitará tus sentidos. El proceso de molido fino garantiza una experiencia de café fresco y revitalizante, mientras que la cafeína natural proporciona una dosis de energía que te mantendrá alerta durante todo el día. Además, sus notas de cacao y nueces añaden un toque de exquisitez a cada sorbo. Cada lote está cuidadosamente empacado para preservar la frescura y el aroma, y se garantiza la calidad y trazabilidad con el código de lote NSOC34296-18PE. Disfruta de cada mañana con una taza de este café premium, diseñado para despertar tus sentidos y acompañarte en tus momentos especiales.
-              </div>
-            </div>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Como con cualquier producto que contenga cafeína, es importante tener en cuenta las posibles contraindicaciones. Se recomienda limitar el consumo de este café en caso de sensibilidad a la cafeína, problemas cardíacos, hipertensión o insomnio. Las mujeres embarazadas o en período de lactancia deben consultar a su médico antes de consumir este producto.
-              </div>
-            </div>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Se debe tener precaución al consumir este café, especialmente en exceso, ya que el consumo excesivo de cafeína puede provocar efectos secundarios no deseados, como nerviosismo, irritabilidad, temblores o insomnio. Se recomienda no consumir este café poco antes de acostarse para evitar interrupciones en el sueño. Además, es importante almacenar el café en un lugar fresco y seco, fuera del alcance de la luz solar directa, para preservar su frescura y sabor.
-              </div>
-            </div>
-            <!--  -->
+          <ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Descripción larga</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Composición</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Precaución</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Café Cafetalero es una marca de café especial gourmet Colombiano con muy buena puntuación de Cupping Score. Cada lote que tuestan debe estar por encima de 80 puntos. Esta calificación es certificada por más de 3 Q Graders distintos de Colombia. Un café de calidad, ideal para aquellos restaurantes y cafeterías.</div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Cada lote que tuestan debe estar por encima de 80 puntos. Esta calificación es certificada por más de 3 Q Graders distintos de Colombia. Un café de calidad, ideal para aquellos restaurantes y cafeterías.</div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Café Cafetalero es una marca de café especial gourmet Colombiano con muy buena puntuación de Cupping Score. Cada lote que tuestan debe estar por encima de 80 puntos. Esta calificación es certificada por más de 3 Q Graders distintos de Colombia. Un café de calidad, ideal para aquellos restaurantes y cafeterías.</div>
           </div>
         </div>
         <!--  -->
         <!--  -->
 
-
-
-        
-
+        <div class="swiper swiperItems mt-2">
+          <h3 class="mb-2">También podría interesarte</h3>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/cafe-2.png"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/cafe-2.png"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/cafe-2.png"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/cafe-2.png"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/cafe-2.png"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/cafe-2.png"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next d-none navBtn"></div>
+          <div class="swiper-button-prev d-none navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+  
 
 
 
@@ -265,7 +665,204 @@
       </div>
     </main>
 
-
+    <!-- Pie de página -->
+    <footer>
+      <div class="foot-container">
+        <section class="foot-hide d-md-none">
+          <div class="accordion accordion-flush bg-white mb-3 rounded-3" id="accordionFooter">
+            <!--  -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Nuestros productos
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
+                  <div class="accordion-body">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Pack cafetero</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Café</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Cafeteras</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Chocolates</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Miel</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Raíces medicinales en polvo</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Sobre Finka Kivinaki
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
+                  <div class="accordion-body">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Retiro en tienda</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Zonas de cobertura</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Políticas de privacidad</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Términos y condiciones</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Contáctanos
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
+                  <div class="accordion-body">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Preguntas frecuentes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Jr. Independencia No. 629. Urb. Pichanaki. Chanchamayo – Junín</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">(+51) 992 464 052</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">(+51) 995 417 834</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">gerencia@finkakivinaki.com</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ventas@finkakivinaki.com</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">exportaciones@finkakivinaki.com</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <!--  -->
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="follow-us bg-white mb-3 rounded-3">
+            <h4>Síguenos</h4>
+            <nav class="nav social-apps mb-3" aria-label="social-apps">
+              <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
+              <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
+              <a class="nav-link" href="#"><i class="bi bi-tiktok"></i></a>
+              <a class="nav-link" href="#"><i class="bi bi-youtube"></i></a>
+            </nav>
+            <figure>
+              <a href="#" class="d-inline-flex gap-2 align-items-center text-decoration-none">
+                <img src="images/book.png" alt="Libro de reclamaciones">
+                <span>Libro de reclamaciones</span>
+              </a>
+            </figure>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="payment-methods bg-white mb-3 rounded-3">
+            <h4>Métodos de pago</h4>
+            <nav class="nav" aria-label="payment-methods">
+              <a class="nav-link" href="#"><img src="images/visa.svg" alt="Visa"></a>
+              <a class="nav-link" href="#"><img src="images/oh.svg" alt="Oh!"></a>
+              <a class="nav-link" href="#"><img src="images/amex.svg" alt="Amex"></a>
+            </nav>
+          </div>
+          <!--  -->
+        </section>
+        <!--  -->
+      </div>
+      <div class="foot-large">
+        <div class="row container-lg mx-auto">
+          <div class="col-6 col-lg-3 mt-3">
+            <h3>Nuestros productos</h3>
+            <ul class="px-0">
+              <li><a href="#">Pack cafetero</a></li>
+              <li><a href="#">Café</a></li>
+              <li><a href="#">Cafeteras</a></li>
+              <li><a href="#">Chocolates</a></li>
+              <li><a href="#">Miel</a></li>
+              <li><a href="#">Raíces medicinales en polvo</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3 mt-3">
+            <h3>Sobre Finka Kivinaki</h3>
+            <ul class="px-0">
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Retiro en tienda</a></li>
+              <li><a href="#">Zonas de cobertura</a></li>
+              <li><a href="#">Políticas de privacidad</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3 mt-3">
+            <h3>Contáctanos</h3>
+            <ul class="px-0">
+              <li><a href="#">Preguntas frecuentes</a></li>
+              <li><a href="#">Jr. Independencia No. 629. Urb. Pichanaki. Chanchamayo – Junín</a></li>
+              <li><a href="#">(+51) 992 464 052</a></li>
+              <li><a href="#">(+51) 995 417 834</a></li>
+              <li><a href="#">gerencia@finkakivinaki.com</a></li>
+              <li><a href="#">ventas@finkakivinaki.com</a></li>
+              <li><a href="#">exportaciones@finkakivinaki.com</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3 mt-3">
+            <h3>Síguenos</h3>
+            <ul class="d-flex gap-2 mt-2 mb-2 px-0">
+              <li><a href="#"><ion-icon class="fs-3" name="logo-facebook"></ion-icon></a></li>
+              <li><a href="#"><ion-icon class="fs-3" name="logo-instagram"></ion-icon></a></li>
+              <li><a href="#"><ion-icon class="fs-3" name="logo-tiktok"></ion-icon></a></li>
+              <li><a href="#"><ion-icon class="fs-3" name="logo-youtube"></ion-icon></a></li>
+            </ul>
+            <!--  -->
+            <div class="book-container mb-3">
+              <a href="#" class="d-inline-flex align-items-center gap-2 text-decoration-none">
+                <img src="images/book.png" width="99px" height="59px" alt="Libro de reclamaciones">
+                <span>Libro de reclamaciones</span>
+              </a>
+            </div>
+            <!--  -->
+            <h3>Medios de pago</h3>
+            <ul class="d-flex gap-2 px-0">
+              <li><a href="#"><img src="images/visa.svg" alt="visa"></a></li>
+              <li><a href="#"><img src="images/oh.svg" alt="oh!"></a></li>
+              <li><a href="#"><img src="images/amex.svg" alt="amex"></a></li>
+            </ul>
+            <!--  -->
+          </div>
+        </div>
+      </div>
+      <p class="text-center py-2 m-0">FINKA KIVANAKI | Copyright © Kivinaki 2024. Todos los derechos reservados</p>
+    </footer>
+    <!--  -->
 
     <!-- Agregando Scripts -->
     <!--  -->
@@ -288,6 +885,41 @@
           swiper: swiper,
         },
       });
+
+      var swiper3 = new Swiper(".swiperItems", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        dynamicBullets: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          516: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          763: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          1010: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+          1257: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+          },
+        },
+      });
+      
+
     </script>
     <!--  -->
 

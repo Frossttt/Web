@@ -117,7 +117,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link d-flex gap-1 align-items-center button" data-bs-toggle="modal" data-bs-target="#cartModal">
+                <a class="nav-link d-flex gap-1 align-items-center button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
                   <i class="bi bi-cart-fill"></i>
                   <span class="cart-tab">2</span>
                 </a>
@@ -175,7 +175,7 @@
           </div>
         </div>
       </nav>
-      <ul class="nav-bottom d-none d-md-flex justify-content-center gap-2">
+      <ul class="nav-bottom d-none d-md-flex justify-content-center gap-4">
         <li>
           <a class="d-flex items-content-center gap-1" href="#">
             <img src="images/coffee-pack.svg" alt="Pack cafetero">
@@ -219,6 +219,27 @@
     <!-- Contenido principal -->
     <main>
       <section>
+
+        <!-- slider area start -->
+        <section class="mb-1">
+          <div class="swiper addSwiperOne w-100">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide-add">
+                <a href="#"><img src="images/add-1.jpg" height="400px" width="100%" alt=""></a>
+                <p>Precio válido del 28 de marzo al 17 de abril de 2024 y/o hasta agotar stock. Máximo 03 unidades por cliente. Aplica máximo 01 promoción por cliente. Envío gratis no aplica Servicio Express.</p>
+              </div>
+              <div class="swiper-slide slide-add">
+                <a href="#"><img src="images/add-2.jpg" height="400px" width="100%" alt=""></a>
+                <p>Precio válido del 28 de marzo al 17 de abril de 2024 y/o hasta agotar stock. Máximo 03 unidades por cliente. Aplica máximo 01 promoción por cliente. Envío gratis no aplica Servicio Express.</p>
+              </div>
+            </div>
+            <div class="swiper-button-next btnsAdd btnAddNext"></div>
+            <div class="swiper-button-prev btnsAdd btnAddPrev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+       <!-- slider area end -->
+
         <div class="swiper mySwiper mt-2">
           <h3 class="mb-2">Últimos productos agregados al carrito</h3>
           <div class="swiper-wrapper">
@@ -485,6 +506,841 @@
           <div class="swiper-button-prev d-none navBtn"></div>
           <div class="swiper-pagination"></div>
         </div>
+
+        <div class="swiper mySwiper mt-2">
+          <h3 class="mb-2">Lo más buscado</h3>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/cafe-2.png"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/cafe-2.png"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/cafe-2.png"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/cafe-2.png"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/cafe-2.png"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/cafe-2.png"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next d-none navBtn"></div>
+          <div class="swiper-button-prev d-none navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Add start -->
+        <div class="swiper swiperAdd mt-2">
+          <div class="row">
+            <div class="col-6">
+              <div class="swiper addSwiperPack1 w-100">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slide-add">
+                    <a href="#"><img src="images/pack-cafetero.jpg" width="600px" height="300px" alt=""></a>
+                  </div>
+                  <div class="swiper-slide slide-add">
+                    <a href="#"><img src="images/pack-taza.jpg" width="600px" height="300px" alt=""></a>
+                  </div>
+                </div>
+                <div class="swiper-button-next btnAddNext"></div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="swiper addSwiperPack2 w-100">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slide-add">
+                    <a href="#"><img src="images/pack-taza.jpg" width="600px" height="300px" alt=""></a>
+                  </div>
+                  <div class="swiper-slide slide-add">
+                    <a href="#"><img src="images/pack-cafetero.jpg" width="600px" height="300px" alt=""></a>
+                  </div>
+                </div>
+                <div class="swiper-button-next btnAddNext"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add end -->
+
+        <div class="swiper mySwiper mt-2">
+          <h3 class="mb-2">Las mejores cafeteras</h3>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/pack-cafetero.jpg"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/pack-cafetero.jpg"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/pack-cafetero.jpg"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/pack-cafetero.jpg"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/pack-cafetero.jpg"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/pack-cafetero.jpg"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next d-none navBtn"></div>
+          <div class="swiper-button-prev d-none navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="swiper mySwiper mt-2">
+          <h3 class="mb-2">Pack Chocolates Kivinaki</h3>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/cafe-11.png"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/cafe-11.png"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/cafe-11.png"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/cafe-11.png"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/cafe-11.png"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column bg-white">
+              <a href="#" class="text-decoration-none">
+                <!--  -->
+                <div
+                  class="image-container d-flex justify-content-center align-items-center"
+                >
+                  <div class="image-inner">
+                    <img
+                      src="images/cafe-11.png"
+                      class="img-fluid"
+                      alt="Café Amparo"
+                    />
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div
+                  class="item-details d-flex flex-column justify-content-between"
+                >
+                  <div class="item-information">
+                    <h4 class="quality fw-semibold">BOLSA 250G</h4>
+                    <p class="description fw-medium">
+                      Café Especial Hacienda el Amparo
+                    </p>
+                  </div>
+                  <div class="item-price d-flex flex-column">
+                    <span
+                      class="regular-price fw-medium text-decoration-line-through"
+                      >S/. 89.90</span
+                    >
+                    <span class="offer-price fw-medium">S/. 59.80</span>
+                  </div>
+                  <div class="item-delivery fs-4 text-secondary">
+                    <i class="bi bi-truck"></i>
+                    <i class="bi bi-shop"></i>
+                  </div>
+                </div>
+                <!--  -->
+              </a>
+              <div class="add-cart">
+                <button class="btn w-100 text-white">+ Agregar al carrito</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next d-none navBtn"></div>
+          <div class="swiper-button-prev d-none navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
       </section>
     </main>
     <!--  -->
@@ -693,55 +1549,50 @@
     <!--  -->
 
     <!-- Cart Modal -->
-    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-fullscreen-sm-down">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="cartModalLabel">Finka Kivinaki</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <!-- Item 1 -->
-            <div class="row border-bottom item-content py-2">
-              <div class="col-9">
-                <a href="#" class="text-decoration-none">
-                  <div class="row h-100">
-                    <div class="col-3 image-container">
-                      <img src="images/cafe-2.png" width="76px" height="76px" alt="Producto">
-                    </div>
-                    <div class="col-9 item-information d-flex flex-column justify-content-between">
-                      <p>Café Especial Hacienda el Amparo</p>
-                      <h4>BOLSA 250G</h4>
-                      <span>Cantidad: 1</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 item-price d-flex flex-column justify-content-between">
-                <div class="d-flex flex-column justify-content-end">
-                  <span class="regular-price text-decoration-line-through">S/. 89.90</span>
-                  <span class="offer-price">S/. 59.80</span>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h1 class="modal-title fs-5" id="cartModalLabel">Finka Kivinaki</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- Item 1 -->
+        <div class="row border-bottom item-content py-2">
+          <div class="col-9">
+            <a href="#" class="text-decoration-none">
+              <div class="row h-100">
+                <div class="col-3 image-container">
+                  <img src="images/cafe-2.png" width="76px" height="76px" alt="Producto">
                 </div>
-                <a class="btn-delete  text-decoration-none px-0 button">Eliminar</a>
+                <div class="col-9 item-information d-flex flex-column justify-content-between">
+                  <p>Café Especial Hacienda el Amparo</p>
+                  <h4>BOLSA 250G</h4>
+                  <span>Cantidad: 1</span>
+                </div>
               </div>
-            </div>
-            <!--  -->
+            </a>
           </div>
-          <div class="modal-footer">
-            <div class="d-flex justify-content-between w-100">
-              <span>Subtotal</span>
-              <span>S/.59.80</span>
+          <div class="col-3 item-price d-flex flex-column justify-content-between">
+            <div class="d-flex flex-column justify-content-end">
+              <span class="regular-price text-decoration-line-through">S/. 89.90</span>
+              <span class="offer-price">S/. 59.80</span>
             </div>
-            <div class="d-flex row justify-content-between w-100 gap-2">
-              <button data-bs-dismiss="modal" data-bs-target="#loginModal" data-bs-toggle="modal" type="button" class="bg-white go-to-cart py-2 col">Ir al carrito</button>
-              <button data-bs-dismiss="modal" data-bs-target="#loginModal" data-bs-toggle="modal" type="button" class="pay-now py-2 col">Comprar ahora</button>
-            </div>
+            <a class="btn-delete  text-decoration-none px-0 button">Eliminar</a>
           </div>
+        </div>
+        <!--  -->
+      </div>
+      <div class="offcanvas-footer p-3">
+        <div class="d-flex justify-content-between w-100 subtotal-price">
+          <span>Subtotal</span>
+          <span>S/. 59.80</span>
+        </div>
+        <div class="d-flex gap-1">
+          <button data-bs-dismiss="offcanvas" data-bs-target="#loginModal" data-bs-toggle="modal" type="button" class="bg-white go-to-cart py-2 col">Ir al carrito</button>
+          <button data-bs-dismiss="offcanvas" data-bs-target="#loginModal" data-bs-toggle="modal" type="button" class="pay-now py-2 col">Comprar ahora</button>
         </div>
       </div>
     </div>
     <!--  -->
-
 
     <!-- Login Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
@@ -871,6 +1722,44 @@
           },
         },
       });
+      
+      var swiper2 = new Swiper(".addSwiperOne", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    
+      var swiper3 = new Swiper(".addSwiperPack1", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var swiper4 = new Swiper(".addSwiperPack2", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      });
+
     </script>
     <!--  -->
 
